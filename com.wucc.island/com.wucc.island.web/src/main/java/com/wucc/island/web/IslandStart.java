@@ -18,7 +18,6 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan({"com.wucc"})
 @MapperScan({"com.wucc.island.**.repository"})
 @EnableCaching
-//
 public class IslandStart {
 
     public static void main(String[] args) throws CloneNotSupportedException {
