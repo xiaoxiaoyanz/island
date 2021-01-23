@@ -11,6 +11,8 @@
 
     <artifactId>island.common</artifactId>
 
+    <name>com.wucc.island.common</name>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>

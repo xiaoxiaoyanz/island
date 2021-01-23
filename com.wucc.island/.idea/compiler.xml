@@ -14,6 +14,7 @@
         <module name="com.wucc.island.base" />
         <module name="com.wucc.island.service" />
         <module name="com.wucc.island.web" />
+        <module name="com.wucc.island.jvm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="com.wucc.island.common" target="8" />
       <module name="com.wucc.island.controller" target="1.8" />
       <module name="com.wucc.island.idgenerator" target="8" />
+      <module name="com.wucc.island.jvm" target="8" />
       <module name="com.wucc.island.service" target="8" />
       <module name="com.wucc.island.web" target="8" />
     </bytecodeTargetLevel>
@@ -39,6 +41,7 @@
       <module name="com.wucc.island.common" options="-parameters" />
       <module name="com.wucc.island.controller" options="-parameters" />
       <module name="com.wucc.island.idgenerator" options="-parameters" />
+      <module name="com.wucc.island.jvm" options="-parameters" />
       <module name="com.wucc.island.service" options="-parameters" />
       <module name="com.wucc.island.web" options="-parameters" />
     </option>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.common/com.wucc.island.common.iml" filepath="$PROJECT_DIR$/com.wucc.island.common/com.wucc.island.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.controller/com.wucc.island.controller.iml" filepath="$PROJECT_DIR$/com.wucc.island.controller/com.wucc.island.controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.idgenerator/com.wucc.island.idgenerator.iml" filepath="$PROJECT_DIR$/com.wucc.island.idgenerator/com.wucc.island.idgenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.jvm/com.wucc.island.jvm.iml" filepath="$PROJECT_DIR$/com.wucc.island.jvm/com.wucc.island.jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.service/com.wucc.island.service.iml" filepath="$PROJECT_DIR$/com.wucc.island.service/com.wucc.island.service.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.web/com.wucc.island.web.iml" filepath="$PROJECT_DIR$/com.wucc.island.web/com.wucc.island.web.iml" />
     </modules>
