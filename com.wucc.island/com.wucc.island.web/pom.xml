@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>island-parent</artifactId>
+        <groupId>com.wucc.island</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>web</artifactId>
+
+    <name>com.wucc.island.web</name>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>${jasypt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${springboot.version}</version>
+            <!--<exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>-->
+        </dependency>
+       <!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jetty</artifactId>
+        </dependency>-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wucc.island</groupId>
+            <artifactId>island.common</artifactId>
+            <version>${island.version}</version>
+        </dependency>
+
+        <!-- 模块间依赖 -->
+        <dependency>
+            <groupId>com.wucc.island</groupId>
+            <artifactId>island.service</artifactId>
+            <version>${island.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wucc.island</groupId>
+            <artifactId>island.controller</artifactId>
+            <version>${island.version}</version>
+        </dependency>
+       <!-- <dependency>
+            <groupId>com.wucc.island</groupId>
+            <artifactId>island.api</artifactId>
+            <version>${island.version}</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.wucc.island</groupId>
+            <artifactId>island.idgenerator</artifactId>
+            <version>${island.version}</version>
+        </dependency>
+
+
+
+
+    </dependencies>
+
+</project>

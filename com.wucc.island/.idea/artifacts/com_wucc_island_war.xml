@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.wucc.island:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>com.wucc.island</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="island-parent-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="com.wucc.island:war exploded" />
+    </root>
+  </artifact>
+</component>

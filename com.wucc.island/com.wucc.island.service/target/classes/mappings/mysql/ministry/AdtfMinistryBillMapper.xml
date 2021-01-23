@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wucc.island.repository.ministry.AdtfMinistryBillMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wucc.island.entity.ministry.AdtfMinistryBill">
+        <id column="ID" property="id" />
+        <result column="VERSION" property="version" />
+        <result column="CODE" property="code" />
+        <result column="TYPE" property="type" />
+        <result column="RG_CODE" property="rgCode" />
+        <result column="SET_YEAR" property="setYear" />
+        <result column="ORG_ID" property="orgId" />
+        <result column="ORG_CODE" property="orgCode" />
+        <result column="ORG_NAME" property="orgName" />
+        <result column="STATUS" property="status" />
+        <result column="IS_EFFECT" property="isEffect" />
+        <result column="ORG_TYPE_CODE" property="orgTypeCode" />
+        <result column="ORG_TYPE_NAME" property="orgTypeName" />
+        <result column="CENTRAL_DOC_NO_CODE" property="centralDocNoCode" />
+        <result column="CENTRAL_DOC_NO_NAME" property="centralDocNoName" />
+        <result column="DOC_TITLE" property="docTitle" />
+        <result column="APPROPRIATE_TYPE_CODE" property="appropriateTypeCode" />
+        <result column="APPROPRIATE_TYPE_NAME" property="appropriateTypeName" />
+        <result column="DOC_THEME_WORD" property="docThemeWord" />
+        <result column="RELEASE_AMOUNT" property="releaseAmount" />
+        <result column="RELEASE_DOC_DATE" property="releaseDocDate" />
+        <result column="RELEASE_DOC_ORG_CODE" property="releaseDocOrgCode" />
+        <result column="RELEASE_DOC_ORG_NAME" property="releaseDocOrgName" />
+        <result column="DOC_CONTENT_INTRODUCTION" property="docContentIntroduction" />
+        <result column="AUDITOR_ID" property="auditorId" />
+        <result column="AUDITOR" property="auditor" />
+        <result column="AUDITORTIME" property="auditortime" />
+        <result column="CREATOR_ID" property="creatorId" />
+        <result column="CREATOR" property="creator" />
+        <result column="CREATIONTIME" property="creationtime" />
+        <result column="MODIFIER_ID" property="modifierId" />
+        <result column="MODIFIER" property="modifier" />
+        <result column="MODIFIEDTIME" property="modifiedtime" />
+        <result column="REMARK" property="remark" />
+        <result column="SYS_TYPE" property="sysType" />
+        <result column="PUBLIC_NO_CODE" property="publicNoCode" />
+        <result column="PUBLIC_NO_NAME" property="publicNoName" />
+        <result column="FUNDS_YEAR" property="fundsYear" />
+        <result column="RELEASETHIS_AMOUNT" property="releasethisAmount" />
+        <result column="RELEASED_AMOUNT" property="releasedAmount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, VERSION, CODE, TYPE, RG_CODE, SET_YEAR, ORG_ID, ORG_CODE, ORG_NAME, STATUS, IS_EFFECT, ORG_TYPE_CODE, ORG_TYPE_NAME, CENTRAL_DOC_NO_CODE, CENTRAL_DOC_NO_NAME, DOC_TITLE, APPROPRIATE_TYPE_CODE, APPROPRIATE_TYPE_NAME, DOC_THEME_WORD, RELEASE_AMOUNT, RELEASE_DOC_DATE, RELEASE_DOC_ORG_CODE, RELEASE_DOC_ORG_NAME, DOC_CONTENT_INTRODUCTION, AUDITOR_ID, AUDITOR, AUDITORTIME, CREATOR_ID, CREATOR, CREATIONTIME, MODIFIER_ID, MODIFIER, MODIFIEDTIME, REMARK, SYS_TYPE, PUBLIC_NO_CODE, PUBLIC_NO_NAME, FUNDS_YEAR, RELEASETHIS_AMOUNT, RELEASED_AMOUNT
+    </sql>
+
+</mapper>

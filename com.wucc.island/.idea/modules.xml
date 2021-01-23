@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.iml" filepath="$PROJECT_DIR$/com.wucc.island.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.api/com.wucc.island.api.iml" filepath="$PROJECT_DIR$/com.wucc.island.api/com.wucc.island.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.base/com.wucc.island.base.iml" filepath="$PROJECT_DIR$/com.wucc.island.base/com.wucc.island.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.codegenerate/com.wucc.island.codegenerate.iml" filepath="$PROJECT_DIR$/com.wucc.island.codegenerate/com.wucc.island.codegenerate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.common/com.wucc.island.common.iml" filepath="$PROJECT_DIR$/com.wucc.island.common/com.wucc.island.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.controller/com.wucc.island.controller.iml" filepath="$PROJECT_DIR$/com.wucc.island.controller/com.wucc.island.controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.idgenerator/com.wucc.island.idgenerator.iml" filepath="$PROJECT_DIR$/com.wucc.island.idgenerator/com.wucc.island.idgenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.service/com.wucc.island.service.iml" filepath="$PROJECT_DIR$/com.wucc.island.service/com.wucc.island.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.web/com.wucc.island.web.iml" filepath="$PROJECT_DIR$/com.wucc.island.web/com.wucc.island.web.iml" />
+    </modules>
+  </component>
+</project>
