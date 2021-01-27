@@ -14,6 +14,7 @@
         <module name="com.wucc.island.base" />
         <module name="com.wucc.island.service" />
         <module name="com.wucc.island.web" />
+        <module name="island.jvm" />
         <module name="com.wucc.island.jvm" />
       </profile>
     </annotationProcessing>
@@ -28,6 +29,7 @@
       <module name="com.wucc.island.jvm" target="8" />
       <module name="com.wucc.island.service" target="8" />
       <module name="com.wucc.island.web" target="8" />
+      <module name="island.jvm" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -42,6 +44,7 @@
       <module name="com.wucc.island.jvm" options="-parameters" />
       <module name="com.wucc.island.service" options="-parameters" />
       <module name="com.wucc.island.web" options="-parameters" />
+      <module name="island.jvm" options="-parameters" />
     </option>
   </component>
 </project>

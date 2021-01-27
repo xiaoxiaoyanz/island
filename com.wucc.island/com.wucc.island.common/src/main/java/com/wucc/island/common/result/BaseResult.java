@@ -13,7 +13,8 @@ import java.io.Serializable;
  * @param <T>
  */
 @ApiModel(description = "返回结果封装类")
-public class BaseResult<T> implements Serializable {
+public class
+BaseResult<T> implements Serializable {
 
 	@ApiModelProperty("返回结果")
 	private String flag;
