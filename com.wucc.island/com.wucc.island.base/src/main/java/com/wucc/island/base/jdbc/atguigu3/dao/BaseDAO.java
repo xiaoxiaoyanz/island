@@ -1,5 +1,7 @@
 package com.wucc.island.base.jdbc.atguigu3.dao;
 
+import com.wucc.island.base.jdbc.atguigu4.util.JDBCUtils;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -11,7 +13,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.atguigu1.util.JDBCUtils;
+
 
 /*
  * DAO: data(base) access object

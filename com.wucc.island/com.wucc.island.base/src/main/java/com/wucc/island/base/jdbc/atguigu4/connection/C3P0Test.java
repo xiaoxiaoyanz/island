@@ -16,9 +16,9 @@ public class C3P0Test {
 		//获取c3p0数据库连接池
 		ComboPooledDataSource cpds = new ComboPooledDataSource();
 		cpds.setDriverClass( "com.mysql.jdbc.Driver" ); 
-		cpds.setJdbcUrl( "jdbc:mysql://localhost:3306/test" );
+		cpds.setJdbcUrl( "jdbc:mysql://localhost:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai" );
 		cpds.setUser("root");                                  
-		cpds.setPassword("abc123"); 
+		cpds.setPassword("wuqwe123");
 		//通过设置相关的参数，对数据库连接池进行管理：
 		//设置初始时数据库连接池中的连接数
 		cpds.setInitialPoolSize(10);

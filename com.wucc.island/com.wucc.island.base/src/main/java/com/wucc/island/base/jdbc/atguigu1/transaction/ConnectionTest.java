@@ -2,9 +2,10 @@ package com.wucc.island.base.jdbc.atguigu1.transaction;
 
 import java.sql.Connection;
 
+import com.wucc.island.base.jdbc.atguigu4.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu1.util.JDBCUtils;
+
 
 public class ConnectionTest {
 	

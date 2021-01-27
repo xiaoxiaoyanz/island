@@ -6,11 +6,11 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.util.List;
 
+import com.wucc.island.base.jdbc.atguigu2.bean.Customer;
+import com.wucc.island.base.jdbc.atguigu3.dao.CustomerDAOImpl;
+import com.wucc.island.base.jdbc.atguigu4.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu4.util.JDBCUtils;
-import com.atguigu2.bean.Customer;
-import com.atguigu3.dao.CustomerDAOImpl;
 
 public class CustomerDAOImplTest {
 

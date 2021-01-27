@@ -6,11 +6,13 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.util.List;
 
+import com.wucc.island.base.jdbc.atguigu2.bean.Customer;
+import com.wucc.island.base.jdbc.atguigu2.dao.CustomerDAOImpl;
+
+import com.wucc.island.base.jdbc.atguigu4.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu1.util.JDBCUtils;
-import com.atguigu2.bean.Customer;
-import com.atguigu2.dao.CustomerDAOImpl;
+
 
 public class CustomerDAOImplTest {
 
@@ -75,7 +77,7 @@ public class CustomerDAOImplTest {
 		try {
 			conn = JDBCUtils.getConnection();
 			
-			Customer cust = dao.getCustomerById(conn, 19);
+			Customer cust = dao.getCustomerById(conn, 1);
 			System.out.println(cust);
 			
 			

@@ -1,10 +1,12 @@
 package com.wucc.island.base.jdbc.atguigu3.dao;
 
+import com.wucc.island.base.jdbc.atguigu2.bean.Customer;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.util.List;
 
-import com.atguigu2.bean.Customer;
+
 
 /*
  * 此接口用于规范针对于customers表的常用操作
@@ -45,7 +47,7 @@ public interface CustomerDAO {
 	 * @param conn
 	 * @param id
 	 */
-	Customer getCustomerById(Connection conn,int id);
+	Customer getCustomerById(Connection conn, int id);
 	/**
 	 * 
 	 * @Description 查询表中的所有记录构成的集合

@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
+import com.wucc.island.base.jdbc.atguigu4.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu1.util.JDBCUtils;
 /*
  * 1.什么叫数据库事务？
  * 事务：一组逻辑操作单元,使数据从一种状态变换到另一种状态。
@@ -177,9 +177,11 @@ public class TransactionTest {
 		//取消自动提交数据
 		conn.setAutoCommit(false);
 		String sql = "update user_table set balance = ? where user = ?";
-		update(conn, sql, 5000,"CC");
+		update(conn, sql, 10000,"CC");
 		
 		Thread.sleep(15000);
+		conn.commit();
+		JDBCUtils.closeResource(conn, null);
 		System.out.println("修改结束");
 	}
 	

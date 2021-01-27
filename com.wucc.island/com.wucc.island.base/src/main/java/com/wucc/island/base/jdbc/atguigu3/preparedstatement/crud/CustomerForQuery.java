@@ -27,10 +27,10 @@ public class CustomerForQuery {
 	@Test
 	public void testQueryForCustomers(){
 		String sql = "select id,name,birth,email from customers where id = ?";
-		Customer customer = queryForCustomers(sql, 13);
+		Customer customer = queryForCustomers(sql, 15);
 		System.out.println(customer);
 		
-		sql = "select name,email from customers where name = ?";
+		sql = "select id,name,email,birth from customers where name = ?";
 		Customer customer1 = queryForCustomers(sql,"周杰伦");
 		System.out.println(customer1);
 	}
