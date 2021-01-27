@@ -14,6 +14,7 @@
         <module name="com.wucc.island.base" />
         <module name="com.wucc.island.service" />
         <module name="com.wucc.island.web" />
+        <module name="com.wucc.island.jvm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
