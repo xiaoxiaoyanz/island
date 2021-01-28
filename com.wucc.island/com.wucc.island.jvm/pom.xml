@@ -16,8 +16,6 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-
-
     <name>com.wucc.island.jvm</name>
 
 </project>
