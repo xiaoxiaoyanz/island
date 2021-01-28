@@ -12,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.jvm/com.wucc.island.jvm.iml" filepath="$PROJECT_DIR$/com.wucc.island.jvm/com.wucc.island.jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.service/com.wucc.island.service.iml" filepath="$PROJECT_DIR$/com.wucc.island.service/com.wucc.island.service.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.wucc.island.web/com.wucc.island.web.iml" filepath="$PROJECT_DIR$/com.wucc.island.web/com.wucc.island.web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/com.wucc.island.jvm/island.jvm.iml" filepath="$PROJECT_DIR$/com.wucc.island.jvm/island.jvm.iml" />
     </modules>
   </component>
 </project>
