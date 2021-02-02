@@ -8,6 +8,20 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.3.1/mybatis-plus-core-3.3.1-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../mybatissource/mybatis-3-mybatis-3.5.3/mybatis-3-mybatis-3.5.3/.mvn/wrapper" />
+      <root url="file://$PROJECT_DIR$/../../mybatissource/mybatis-3-mybatis-3.5.3/mybatis-3-mybatis-3.5.3/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatissource/mybatis-3-mybatis-3.5.3/mybatis-3-mybatis-3.5.3/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-annotation/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-boot-starter-test/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-boot-starter-test/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-boot-starter/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-boot-starter/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-core/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-extension/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus-extension/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatisplus-gitee/mybatis-plus/mybatis-plus/src/test/java" />
     </SOURCES>
   </library>
 </component>

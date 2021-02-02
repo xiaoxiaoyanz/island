@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wucc.island.base.mybatis.common.mapper.UserMapper">
+    <resultMap type="com.wucc.island.base.mybatis.common.bean.User" id="UserMap">
+        <result property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="username" column="USERNAME" jdbcType="VARCHAR"/>
+        <result property="password" column="PASSWORD" jdbcType="VARCHAR"/>
+        <result property="lastName" column="LAST_NAME" jdbcType="VARCHAR"/>
+        <result property="sex" column="SEX" jdbcType="VARCHAR"/>
+        <result property="birthDate" column="BIRTH_DATE" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UserMap">
+        select ID,
+               USERNAME,
+               PASSWORD,
+               LAST_NAME,
+               SEX,
+               BIRTH_DATE
+        from mybatis.user
+        where ID = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UserMap">
+        select ID,
+               USERNAME,
+               PASSWORD,
+               LAST_NAME,
+               SEX,
+               BIRTH_DATE
+        from mybatis.user limit #{param1}, #{param2}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="UserMap">
+        select
+        ID, USERNAME, PASSWORD, LAST_NAME, SEX, BIRTH_DATE
+        from mybatis.user
+        <where>
+            <if test="id != null">
+                and ID = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and USERNAME = #{username}
+            </if>
+            <if test="password != null and password != ''">
+                and PASSWORD = #{password}
+            </if>
+            <if test="lastName != null and lastName != ''">
+                and LAST_NAME = #{lastName}
+            </if>
+            <if test="sex != null and sex != ''">
+                and SEX = #{sex}
+            </if>
+            <if test="birthDate != null">
+                and BIRTH_DATE = #{birthDate}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into mybatis.user(USERNAME, PASSWORD, LAST_NAME, SEX, BIRTH_DATE)
+        values (#{username}, #{password}, #{lastName}, #{sex}, #{birthDate})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into mybatis.user(USERNAME, PASSWORD, LAST_NAME, SEX, BIRTH_DATE)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username}, #{entity.password}, #{entity.lastName}, #{entity.sex}, #{entity.birthDate})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into mybatis.user(USERNAME, PASSWORD, LAST_NAME, SEX, BIRTH_DATE)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username}, #{entity.password}, #{entity.lastName}, #{entity.sex}, #{entity.birthDate})
+        </foreach>
+        on duplicate key update
+        USERNAME = values(USERNAME) , PASSWORD = values(PASSWORD) , LAST_NAME = values(LAST_NAME) , SEX = values(SEX) ,
+        BIRTH_DATE = values(BIRTH_DATE)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update mybatis.user
+        <set>
+            <if test="username != null and username != ''">
+                USERNAME = #{username},
+            </if>
+            <if test="password != null and password != ''">
+                PASSWORD = #{password},
+            </if>
+            <if test="lastName != null and lastName != ''">
+                LAST_NAME = #{lastName},
+            </if>
+            <if test="sex != null and sex != ''">
+                SEX = #{sex},
+            </if>
+            <if test="birthDate != null">
+                BIRTH_DATE = #{birthDate},
+            </if>
+        </set>
+        where ID = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from mybatis.user
+        where ID = #{id}
+    </delete>
+</mapper>

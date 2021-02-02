@@ -8,6 +8,9 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../mybatissource/mybatis-3-mybatis-3.5.3/mybatis-3-mybatis-3.5.3/.mvn/wrapper" />
+      <root url="file://$PROJECT_DIR$/../../mybatissource/mybatis-3-mybatis-3.5.3/mybatis-3-mybatis-3.5.3/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../mybatissource/mybatis-3-mybatis-3.5.3/mybatis-3-mybatis-3.5.3/src/test/java" />
     </SOURCES>
   </library>
 </component>
