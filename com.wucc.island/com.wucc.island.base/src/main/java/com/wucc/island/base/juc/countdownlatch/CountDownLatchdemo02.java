@@ -47,7 +47,8 @@ public class CountDownLatchdemo02 {
         t1.start();
         T t2 = new T("t2",6,countDownLatch);
         t2.start();
-        countDownLatch.await(3,TimeUnit.SECONDS);
+        final boolean await = countDownLatch.await(3, TimeUnit.SECONDS);
+        System.out.println(await);
         long endTime = System.currentTimeMillis();
         System.out.println("共耗时："+(endTime - startTime));
     }
