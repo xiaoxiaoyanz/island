@@ -31,8 +31,8 @@ public class AdtfMinistryBillService extends ServiceImpl<AdtfMinistryBillMapper,
 
     @CachePut(value = "adtfMinistryBill", key = "#adtfMinistryBill.id")
     @Override
-    public boolean updateDdtfMinistryBill(AdtfMinistryBill adtfMinistryBill) {
-        return this.saveOrUpdate(adtfMinistryBill);
+    public AdtfMinistryBill updateDdtfMinistryBill(AdtfMinistryBill adtfMinistryBill) {
+        return this.saveOrUpdate(adtfMinistryBill)?adtfMinistryBill:null;
     }
 
     @CacheEvict(value = "adtfMinistryBill", key = "#id")

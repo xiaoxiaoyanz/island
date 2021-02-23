@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 
 import java.io.Serializable;
 import java.util.concurrent.ExecutorService;
@@ -51,5 +52,16 @@ public class RedisTest extends IslandTest {
         // 对应 String（字符串）
         AdtfMinistryBill adtfMinistryBill = (AdtfMinistryBill) redisCacheTemplate.opsForValue().get(key);
         log.debug("【adtfMinistryBill】= {}", adtfMinistryBill);
+    }
+
+    @Test
+    public void test01(){
+
+        ValueOperations<String, String> stringStringValueOperations = stringRedisTemplate.opsForValue();
+
+        stringStringValueOperations.set("k1","v1");
+
+        System.out.println(stringStringValueOperations.get("k1"));
+
     }
 }

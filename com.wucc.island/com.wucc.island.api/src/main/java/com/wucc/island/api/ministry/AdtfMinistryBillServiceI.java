@@ -15,7 +15,7 @@ public interface AdtfMinistryBillServiceI extends IService<AdtfMinistryBill> {
 
     AdtfMinistryBill getAdtfMinistryBillById(Long id);
 
-    boolean updateDdtfMinistryBill(AdtfMinistryBill adtfMinistryBill);
+    AdtfMinistryBill updateDdtfMinistryBill(AdtfMinistryBill adtfMinistryBill);
 
     int deleteById(Long id);
 }

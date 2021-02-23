@@ -12,6 +12,7 @@ import com.wucc.island.entity.other.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
@@ -30,6 +31,7 @@ import org.springframework.web.bind.annotation.*;
 public class AdtfMinistryBillController {
 
 
+    @Autowired
     private AdtfMinistryBillServiceI adtfMinistryBillService;
 
 
@@ -43,7 +45,7 @@ public class AdtfMinistryBillController {
     }
 
 
-    @GetMapping("/save")
+    @PostMapping("/save")
     @ApiOperation(value = "保存实体", notes = "返回部级单据实体")
     public Object save(@RequestBody  AdtfMinistryBill adtfMinistryBill) {
 
