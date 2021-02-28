@@ -19,15 +19,15 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="com.wucc.island" target="1.8" />
-      <module name="com.wucc.island.api" target="1.8" />
-      <module name="com.wucc.island.base" target="1.8" />
-      <module name="com.wucc.island.codegenerate" target="1.8" />
-      <module name="com.wucc.island.common" target="1.8" />
+      <module name="com.wucc.island.api" target="8" />
+      <module name="com.wucc.island.base" target="8" />
+      <module name="com.wucc.island.codegenerate" target="8" />
+      <module name="com.wucc.island.common" target="8" />
       <module name="com.wucc.island.controller" target="1.8" />
-      <module name="com.wucc.island.idgenerator" target="1.8" />
-      <module name="com.wucc.island.jvm" target="1.8" />
-      <module name="com.wucc.island.service" target="1.8" />
-      <module name="com.wucc.island.web" target="1.8" />
+      <module name="com.wucc.island.idgenerator" target="8" />
+      <module name="com.wucc.island.jvm" target="8" />
+      <module name="com.wucc.island.service" target="8" />
+      <module name="com.wucc.island.web" target="8" />
       <module name="island.jvm" target="8" />
     </bytecodeTargetLevel>
   </component>
